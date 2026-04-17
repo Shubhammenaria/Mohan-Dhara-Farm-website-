@@ -6,32 +6,45 @@
 <title>Vishnu Dhara</title>
 
 <style>
-body {margin:0;font-family: 'Segoe UI', sans-serif;background:#fff;}
-header {background:#f4a261;color:white;text-align:center;padding:20px;}
-header h1 {margin:0;font-size:32px;}
-header p {margin:5px 0;}
+body {margin:0;font-family: 'Segoe UI', sans-serif;background:#fafafa;color:#333;}
+
+header {
+background:#f4a261;
+color:white;
+padding:15px;
+text-align:center;
+}
 
 .banner {
-background:url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b');
+background:url('https://images.unsplash.com/photo-1500595046743-cd271d694d30');
 background-size:cover;
 color:white;
 text-align:center;
-padding:80px 20px;
+padding:100px 20px;
 }
 
-.section {padding:30px;}
+.banner h1 {font-size:40px;margin:0;}
+.banner p {font-size:18px;}
 
-.products {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+.section {padding:40px 20px;max-width:1100px;margin:auto;}
+
+.products {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
 
 .card {
-border:1px solid #ddd;
-border-radius:10px;
-padding:15px;
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
 text-align:center;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
-.card img {width:100%;border-radius:10px;}
+.card img {width:100%;height:200px;object-fit:cover;}
+
+.card h3 {margin:10px 0;}
 
 .btn {
 display:inline-block;
@@ -43,25 +56,54 @@ text-decoration:none;
 border-radius:5px;
 }
 
+.features {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.feature {
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
 footer {
 background:#333;
 color:white;
 text-align:center;
+padding:20px;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
 padding:15px;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>Vishnu Dhara</h1>
+<h2>Vishnu Dhara</h2>
 <p>हर बूँद में शुद्धता और विश्वास</p>
 </header>
 
 <div class="banner">
-<h2>Pure Dairy Products from Our Farm</h2>
+<h1>Pure Dairy Products</h1>
 <p>Fresh • Natural • Traditional</p>
+<a class="btn" href="https://wa.me/91XXXXXXXXXX">Order on WhatsApp</a>
 </div>
 
 <div class="section">
@@ -91,11 +133,20 @@ padding:15px;
 </div>
 
 <div class="section">
-<h2>About Us</h2>
-<p>
-Vishnu Dhara is a farm-based dairy initiative from Udaipur, Rajasthan.  
-We provide pure, fresh and chemical-free milk and traditional ghee directly from our farm to your home.
-</p>
+<h2>Why Choose Us</h2>
+
+<div class="features">
+<div class="feature">✅ 100% Pure</div>
+<div class="feature">🌿 No Chemicals</div>
+<div class="feature">🚜 Farm Fresh</div>
+<div class="feature">🥛 Traditional Methods</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Our Farm</h2>
+<p>हमारे खेत और गायों से सीधे आपके घर तक शुद्ध दूध और घी।</p>
+<img src="https://images.unsplash.com/photo-1598514982846-1b5b1c3c9a4d" style="width:100%;border-radius:10px;">
 </div>
 
 <div class="section">
@@ -103,12 +154,21 @@ We provide pure, fresh and chemical-free milk and traditional ghee directly from
 <p>📞 +91-9610807051</p>
 <p>📍 Udaipur, Rajasthan</p>
 
-<a class="btn" href="https://wa.me/919610807051">Order on WhatsApp</a>
+<iframe 
+src="https://maps.google.com/maps?q=udaipur&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="250" style="border:0;">
+</iframe>
 </div>
 
 <footer>
-<p>© 2026 Vishnu Dhara</p>
+<p>© 2026 Vishnu Dhara | All Rights Reserved</p>
 </footer>
+
+<a class="whatsapp" href="https://wa.me/919610807051">💬 Order on WhatsApp</a>
+
+<a class="instagram" href="https://instagram.com/mohandharafarm" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="24">
+</a>
 
 </body>
 </html>
